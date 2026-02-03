@@ -1,0 +1,12 @@
+def write_to_file(filename,msg):
+    try:
+        with open(filename,'w') as f:
+            f.write(msg)
+        return True
+    except:
+        return False
+
+
+
+print(write_to_file('saved_game.csv','test'))
+print(write_to_file('saved_game.csv/','test'))
