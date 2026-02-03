@@ -1,0 +1,2 @@
+with open('saved_game.csv','r') as f:
+    print(f.read(50))
