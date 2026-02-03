@@ -1,0 +1,10 @@
+def first_word(file_name, word):
+    lst_words = []
+    with open(file_name,'r') as file:
+     for line in file:
+        if line.startswith(word) :
+         lst_words.append(line.rstrip('\n'))
+    return lst_words
+
+print(first_word('saved_game.csv','Hello'))
+
