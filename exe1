@@ -1,0 +1,4 @@
+with open('saved_game.csv','w') as f:
+    f.write('hello world')
+with open('saved_game.csv','r') as f:
+    print(f.read())
